@@ -36,15 +36,21 @@ browser,
 
 
 .tabbrowser-tab {
-  border-radius: 10px !important;
+  border-radius: 25px !important;
   outline: solid 2px var(--secondaryline);
-  outline-offset: -4px;
+  outline-offset: -8px;
+  min-width: 40px;
+  padding: 0 20px;
 }
 .tabbrowser-tab[selected] {
+  border-radius: 25px !important;
   outline: solid 2px var(--primaryline);
   border: none !important;
 }
 
+.tab-background {
+  outline: none !important;
+}
 
 .tabbrowser-tab[selected="true"] > stack > hbox > vbox > label {
   /* animation properties */
